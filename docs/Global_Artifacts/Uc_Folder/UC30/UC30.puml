@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC30 as "UC30 - Receive notifications when the file storage are accessed or sharing permissions are modified"
+User --> UC30
+
+@enduml

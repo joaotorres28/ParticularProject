@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC8 as "UC8 - Download a previously uploaded file"
+User --> UC8
+
+@enduml

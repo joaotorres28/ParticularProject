@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC11 as "UC11 - Delete a file from the system"
+User --> UC11
+
+@enduml

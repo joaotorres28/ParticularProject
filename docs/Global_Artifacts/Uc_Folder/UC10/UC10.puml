@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC10 as "UC10 - View a list of uploaded files"
+User --> UC10
+
+@enduml

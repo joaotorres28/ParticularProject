@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor SystemAdministrator
+
+usecase UC9 as "UC9 - Encrypt files before upload"
+SystemAdministrator --> UC9
+
+@enduml

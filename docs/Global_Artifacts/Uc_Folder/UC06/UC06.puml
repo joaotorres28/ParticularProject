@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC6 as "UC6 - Divide files into chunks"
+User --> UC6
+
+@enduml

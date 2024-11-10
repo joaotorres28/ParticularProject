@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC12 as "UC12 - View File size, upload date and number of nodes"
+User --> UC12
+
+@enduml

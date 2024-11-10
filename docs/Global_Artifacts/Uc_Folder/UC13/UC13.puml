@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC13 as "UC13 - Generate unique link for a uploaded file"
+User --> UC13
+
+@enduml

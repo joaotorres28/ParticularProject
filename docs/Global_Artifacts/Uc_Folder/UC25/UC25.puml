@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor NodeOperator
+
+usecase UC25 as "UC25 - View dashboard of node's contributions including(number of files and available storage capacity)"
+NodeOperator --> UC25
+
+@enduml

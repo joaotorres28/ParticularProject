@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC1 as "UC1 - Create an account"
+User --> UC1
+
+@enduml

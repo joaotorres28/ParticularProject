@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC4 as "UC4 - Log out from an account"
+User --> UC4
+
+@enduml

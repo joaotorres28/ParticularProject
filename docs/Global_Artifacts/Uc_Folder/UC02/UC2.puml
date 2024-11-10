@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC2 as "UC2 - Log in into an account"
+User --> UC2
+
+@enduml

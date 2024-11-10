@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor NodeOperator
+
+usecase UC22 as "UC22 - Connect a node to the network"
+NodeOperator --> UC22
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC3 as "UC3 - Access account settings"
+User --> UC3
+
+@enduml

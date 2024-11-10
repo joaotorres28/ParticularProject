@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC14 as "UC14 - Share a unique link with other users."
+User --> UC14
+
+@enduml

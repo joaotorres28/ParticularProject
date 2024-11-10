@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor NodeOperator
+
+usecase UC24 as "UC24 - Participate in data replication"
+NodeOperator --> UC24
+
+@enduml

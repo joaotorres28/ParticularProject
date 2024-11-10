@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC15 as "UC15 - Assign permissions(view, download) for shared files"
+User --> UC15
+
+@enduml

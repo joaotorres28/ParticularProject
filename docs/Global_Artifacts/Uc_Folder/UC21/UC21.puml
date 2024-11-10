@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor NodeOperator
+
+usecase UC21 as "UC21 - Receive confirmation when the node is successfully stores data"
+NodeOperator --> UC21
+
+@enduml

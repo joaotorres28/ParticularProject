@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC17 as "UC17 - Use shared link to download file"
+User --> UC17
+
+@enduml

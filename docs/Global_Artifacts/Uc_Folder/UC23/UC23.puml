@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor NodeOperator
+
+usecase UC23 as "UC23 - Store chunks of files in the network"
+NodeOperator --> UC23
+
+@enduml

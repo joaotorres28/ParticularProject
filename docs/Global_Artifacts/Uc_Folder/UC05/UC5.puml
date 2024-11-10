@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC5 as "UC5 - Upload files to the system"
+User --> UC5
+
+@enduml

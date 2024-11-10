@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor SystemAdministrator
+
+usecase UC18 as "UC18 - replicate files across multiple nodes"
+SystemAdministrator --> UC18
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+actor User
+
+usecase UC28 as "UC28 - Decrypt files only with permission"
+User --> UC28
+
+@enduml
