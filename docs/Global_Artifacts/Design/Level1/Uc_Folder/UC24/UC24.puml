@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor NodeOperator
+actor SystemAdministrator
 
-usecase UC24 as "UC24 - Participate in data replication"
-NodeOperator --> UC24
+usecase UC24 as "UC24 - Receive alerts if a node goes offline or has storage issues"
+SystemAdministrator --> UC24
 
 @enduml

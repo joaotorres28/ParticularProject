@@ -3,7 +3,7 @@
 left to right direction
 actor User
 
-usecase UC17 as "UC17 - Use shared link to download file"
+usecase UC17 as "UC17 - Be alerted if any of my files are temporarily unavailable"
 User --> UC17
 
 @enduml

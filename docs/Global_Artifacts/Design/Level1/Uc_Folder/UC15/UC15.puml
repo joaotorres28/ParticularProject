@@ -3,7 +3,7 @@
 left to right direction
 actor User
 
-usecase UC15 as "UC15 - Assign permissions(view, download) for shared files"
+usecase UC15 as "UC15 - Use a shared link to access a file"
 User --> UC15
 
 @enduml

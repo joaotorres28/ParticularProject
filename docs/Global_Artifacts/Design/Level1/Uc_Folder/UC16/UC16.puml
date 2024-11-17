@@ -3,7 +3,7 @@
 left to right direction
 actor User
 
-usecase UC16 as "UC16 - Use shared link to access the file"
+usecase UC16 as "UC16 - Use shared link to download a file"
 User --> UC16
 
 @enduml

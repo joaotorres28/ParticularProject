@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor NodeOperator
+actor SystemAdministrator
 
-usecase UC22 as "UC22 - Connect a node to the network"
-NodeOperator --> UC22
+usecase UC22 as "UC22 - Files to be replicated across multiple nodes"
+SystemAdministrator --> UC22
 
 @enduml

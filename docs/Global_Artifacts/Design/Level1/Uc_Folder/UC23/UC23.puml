@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor NodeOperator
+actor SystemAdministrator
 
-usecase UC23 as "UC23 - Store chunks of files in the network"
-NodeOperator --> UC23
+usecase UC23 as "UC23 - Monitor all active nodes(storafe, contributions, uptime)k"
+SystemAdministrator --> UC23
 
 @enduml

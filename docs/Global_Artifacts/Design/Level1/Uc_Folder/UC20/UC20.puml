@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor NodeOperator
+actor SystemAdministrator
 
-usecase UC20 as "UC20 - Contribute storage to the network"
-NodeOperator --> UC20
+usecase UC20 as "UC20 - Files to be encrypted before upload"
+SystemAdministrator --> UC20
 
 @enduml

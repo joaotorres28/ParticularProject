@@ -1,9 +1,0 @@
-@startuml
-
-left to right direction
-actor SystemAdministrator
-
-usecase UC27 as "UC27 - Encrypt all files stored on the network"
-SystemAdministrator --> UC27
-
-@enduml

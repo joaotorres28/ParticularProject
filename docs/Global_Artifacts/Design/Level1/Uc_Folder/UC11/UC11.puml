@@ -3,7 +3,7 @@
 left to right direction
 actor User
 
-usecase UC11 as "UC11 - Delete a file from the system"
+usecase UC11 as "UC11 - View the file size, upload date and number of nodes"
 User --> UC11
 
 @enduml

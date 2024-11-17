@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor NodeOperator
+actor SystemAdministrator
 
-usecase UC21 as "UC21 - Receive confirmation when the node is successfully stores data"
-NodeOperator --> UC21
+usecase UC21 as "UC21 - Files to be decrypted after download"
+SystemAdministrator --> UC21
 
 @enduml

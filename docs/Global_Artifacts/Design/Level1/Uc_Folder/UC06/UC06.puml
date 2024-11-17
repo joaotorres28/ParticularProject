@@ -3,7 +3,7 @@
 left to right direction
 actor User
 
-usecase UC6 as "UC6 - Divide files into chunks"
+usecase UC6 as "UC6 - My files to be divided into chunks"
 User --> UC6
 
 @enduml

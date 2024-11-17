@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor SystemAdministrator
+actor User
 
-usecase UC9 as "UC9 - Encrypt files before upload"
-SystemAdministrator --> UC9
+usecase UC9 as "UC9 - View a list of my uploaded files"
+User --> UC9
 
 @enduml

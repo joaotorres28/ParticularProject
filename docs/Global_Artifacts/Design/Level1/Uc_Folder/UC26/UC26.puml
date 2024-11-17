@@ -1,9 +1,0 @@
-@startuml
-
-left to right direction
-actor SystemAdministrator
-
-usecase UC26 as "UC26 - Monitor all active nodes including(storage contributions and uptime)"
-SystemAdministrator --> UC26
-
-@enduml

@@ -3,7 +3,7 @@
 left to right direction
 actor User
 
-usecase UC7 as "UC7 - Store files across multiple nodes"
+usecase UC7 as "UC7 - Files to be stored across multiple nodes"
 User --> UC7
 
 @enduml

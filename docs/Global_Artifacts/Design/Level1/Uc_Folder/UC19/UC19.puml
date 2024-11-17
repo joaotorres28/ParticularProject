@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor System
+actor User
 
-usecase UC19 as "UC19 - Alert the user if any of his files are temporarily unavaible"
-System --> UC19
+usecase UC19 as "UC19 - Receive a notification when my file is accessed or my sharing permissions are modified"
+User --> UC19
 
 @enduml

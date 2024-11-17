@@ -3,7 +3,7 @@
 left to right direction
 actor User
 
-usecase UC13 as "UC13 - Generate unique link for a uploaded file"
+usecase UC13 as "UC13 - Share a link with other Users"
 User --> UC13
 
 @enduml

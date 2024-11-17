@@ -1,9 +1,0 @@
-@startuml
-
-left to right direction
-actor SystemAdministrator
-
-usecase UC29 as "UC29 - Receive alert if a node goes offline or has strage issues"
-SystemAdministrator --> UC29
-
-@enduml

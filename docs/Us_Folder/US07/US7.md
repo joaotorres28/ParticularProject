@@ -2,7 +2,7 @@
 
 ## 1. Context
 
-* US 7 A system administrator, must be able to encrypt files before upload and decrypt upon download.
+* US 7 A system administrator, wants files to be encrypted before upload and decrypted upon download.
 
 ## 2. Requirements
 

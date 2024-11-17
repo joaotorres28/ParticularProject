@@ -1,9 +1,9 @@
 @startuml
 
 left to right direction
-actor SystemAdministrator
+actor User
 
-usecase UC18 as "UC18 - replicate files across multiple nodes"
-SystemAdministrator --> UC18
+usecase UC18 as "UC18 - Only those with permission or access rights to be able to decrypt and access my data"
+User --> UC18
 
 @enduml
