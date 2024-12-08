@@ -28,8 +28,8 @@ decentralized network.
 
 1. IDE (VS Code): Development will be conducted using a modern IDE like 
 VS Code, supporting various programming languages such as JavaScript, Python, Java, etc. 
-2. Frontend Framework (Angular or React): The frontend will be developed using 
-Angular or React to create a dynamic and responsive user interface for functionalities 
+2. Frontend Framework (Angular): The frontend will be developed using 
+Angular to create a dynamic and responsive user interface for functionalities 
 like file upload, download, and management. 
 3. UML Editor (Visual Paradigm): UML diagrams will be designed using Visual Paradigm to illustrate the system architecture, including class, sequence, and deployment diagrams. 
 4. Code Repository (GitHub): Source code will be hosted on GitHub allowing for version control and collaboration. 
@@ -37,8 +37,8 @@ like file upload, download, and management.
 6. NoSQL DBMS (e.g., MongoDB): A NoSQL database like MongoDB will store metadata related to files, chunks, and nodes, ensuring scalability and flexibility. 
 7. REST Client (e.g., Postman): Postman will be used for testing RESTful APIs, which handle file operations and user management. 
 8. SOAP Client (e.g., SOAPUI): SOAPUI will be employed to test any SOAP-based web services required for specific integrations. 
-9. Container Software (e.g., Docker): Docker will be utilized to containerize the application, making it easier to deploy across different environments. 
-10. UI Testing Client/Software (e.g., Selenium): Selenium will automate UI testing to validate core functionalities such as file upload/download. 
+9. Container Software (Docker): Docker will be utilized to containerize the application, making it easier to deploy across different environments. 
+10. UI Testing Client/Software (cypress): Selenium will automate UI testing to validate core functionalities such as file upload/download. 
 11. Cloud Deployment (e.g., AWS, Azure, Google Cloud): The application will be deployed on cloud platforms like AWS, Azure, or Google Cloud for scalability and availability. 
 12. CI/CD Pipeline: Continuous integration and deployment will be configured using tools like GitHub Actions to automate testing and cloud deployment.
 
