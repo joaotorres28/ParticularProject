@@ -9,7 +9,7 @@ function registerNewUser(user) {
     }
 }
 
-function findAllUser(){
+function findAllUsers(){
     var allUsers = User.find(function (err) {
         if (err) {
             throw err;

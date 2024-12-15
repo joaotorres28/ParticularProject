@@ -1,66 +1,24 @@
-var express = require('express');
+var { Router } = require('express');
 var router = express.Router();
+var middlewares = require('../middleware');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+module.exports = (app) => {
 
-router.post('/register', function(req,res){
-  var user = new UserModel();
-  user.name = req.body.name;
-  user.password = bcrypt.hashSync(req.body.password,8);
-  user.email = req.body.email;
-  user.date = req.body.date;
-  user.isAdmin = req.body.isAdmin;
-    user.save(function (err){
-      if(err)
-        return res.status(500).send("There is a problem registering the user.");
-      res.json({message:"User registered!"});
-    })
-});
+  app.user('/users', router);
 
-router.post('/login',function (req,res){
-  UserModel.findOne({email: req.body.email}, function(err,user){
-    if (err) throw err;
-    if (!user) {res.json({success:false,message:'Authentication failed.'});}
-    else if(user){
-      if(!bcrypt.compareSync(req.body.password, user.password))
-      return res.status(401).send({auth:false,token:null,message: 'Auth failed.'});
-      else {
-        const payload= {user:user.email};
-        var theToken = JsonWebTokenError.sign(payload, 'TheSecret_123456789', {expiresIn:86400});
-        res.json({success:true,message:'Enjoy your token!',token:theToken});
-      }
-    }
+  router.post('/register', middlewares.registerUser, function (req, res) {
+    return res.json({ message: 'User was successfully registered.' }).status(201);
   });
-});
 
-function hasRole(userEmail, role, func){
-  UserModel.findOne({email: userEmail}, function (err, user){
-    if (err) throw err;
-
-    if(!user){
-      res.json({success: false, message: 'Authentication failed.'});
-    }
-    else if (user) {
-      func(role === 'administrator' && user.isAdmin === true)
-    }
+  router.post('/login', middlewares.login, function (req, res) {
+    return res.json({ message: 'Logged in.'}).status(201);
   })
-}
 
-router.get('/', VerifyToken, function(req, res){
-  hasRole(req.user, 'administrator', function (decision) {
-    if (!decision)
-      return res.status(403).send(
-        {auth:false, token: null, message: 'You have no authrization.'}
-    );
-    else
-      UserModel.find(function (err, users){
-        if (err) res.send(err);
-        res.json(users);
-      })
+  router.delete('/:client_id', middlewares.deleteUserAccount, function (req, res){
+    return res.json({ message: 'User\'s account was successfully delete.'}).status(200);
   });
-})
 
-module.exports = router;
+  router.get('/', middlewares.attachAllUsers, function (req, res){
+    return res.json({ users: req.allUsers }).status(200);
+  });
+}
