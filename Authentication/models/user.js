@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Client = new Schema({
+var User = new Schema({
     name: {
         type: String,
         min: 2,
@@ -23,7 +23,11 @@ var Client = new Schema({
     date : {
         type: Date,
         default: Date.now
+    },
+    isAdmin : {
+        type: Boolean,
+        default: false
     }
 });
 
-module.exports = mongoose.model('Client', Client);
+module.exports = mongoose.model('User', User);
