@@ -44,7 +44,7 @@ const sendEmail = (email) => {
     fs.readFile(__dirname + "/emailContent.html", { encoding: "utf-8" }, function (error, html) {
 
         var template = handlebars.compile(html);
-        var replacements = { username: "LAPR5-G1"};
+        var replacements = { username: "emailTest"};
         var htmlToSend = template(replacements);
     
         var transporter = nodemailer.createTransport({
